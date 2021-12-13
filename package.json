@@ -1,0 +1,24 @@
+{
+  "name": "TeamsJsWireDebugger",
+  "version": "1.0.0",
+  "description": "Chrome/Edge extension to log all the traffic between TeamsJs and the host to devTools console.",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm dist/bundle.js",
+    "build-dev": "webpack --mode development",
+    "build-prod": "webpack --mode production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/debug": "^4.1.7",
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.5.3",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1"
+  },
+  "dependencies": {
+    "debug": "^4.3.3"
+  }
+}

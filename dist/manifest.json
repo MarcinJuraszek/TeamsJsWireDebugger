@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "TeamsJs Wire Debugger",
+  "version": "0.0.1",
+  "description": "Intercepts PostMessage based communication between TeamsJs App and Host and logs it to console.",
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "all_frames": true,
+      "js": ["./bundle.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "permissions": ["http://*/*", "https://*/*"]
+}
