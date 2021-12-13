@@ -31,8 +31,6 @@ window.addEventListener("message", (event) => {
         timestamp,
         data: formatData(args),
       });
-    } else {
-      appHostRequestLogger("Request from TeamsJs: %o", event.data);
     }
 
     return;
