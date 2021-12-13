@@ -39,7 +39,7 @@ window.addEventListener("message", (event) => {
   if (event.source === window.parent) {
     const data = event.data;
     const { id, func, args } = data;
-    if (id) {
+    if (id !== undefined) {
       teamsJsResponseLogger("Response from Host %o", {
         id,
         data: formatData(args),
